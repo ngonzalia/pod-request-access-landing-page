@@ -6,7 +6,7 @@
 
 body {
   background: #121725;
-  height: 41.6875rem - 3.875rem;
+  min-height: 100vh;
   scroll-behavior: smooth;
   // tablet
   @media (min-width: 768px) {
