@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+
+// general
+* {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 400;
+}
+
+
+// mixins
+@mixin form-text($color: $color) {
+  font-size: .875rem;
+  line-height: 1.75rem;
+  color: $color;
+}
+
+
+// type of text
+.title {
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  text-transform: uppercase;
+  color: #54E6AF;
+  &-white {
+    color: #FFFFFF;
+  }
+  // mobile
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  // desktop
+  @media (min-width: 1200px) {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+  }
+}
+
+.text {
+  font-size: .938rem;
+  line-height: 1.563rem;
+  color: #C2CBE5;
+  // mobile
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.form-email::placeholder {
+  @include form-text(#FFFFFF);
+  opacity: 0.5;
+}
+.form-text {
+  @include form-text(#FFFFFF);
+}
+.error-text {
+  font-size: .75rem;
+  line-height: .875rem;
+  color: #FB3E3E;
+  margin: .5rem 0 0 1.75rem;
+}
+
+.btn-text {
+  @include form-text(#121725);
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+.form {
+
+  // tablet
+  @media (min-width: 768px) {
+    height: 3.5rem;
+    width: 26.688rem;
+    position: relative;
+  }
+
+  &-email {
+    height: 2.875rem;
+    width: 20.438rem;
+    border-radius: 1.75rem;
+    padding: .563rem 2rem;
+    background: #2C344B;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    // tablet
+    @media (min-width: 768px) {
+      height: 3.5rem;
+      width: 26.688rem;
+      padding: .875rem 2rem;
+      position: relative;
+    }
+  }
+
+  &-btn {
+    height: 2.875rem;
+    width: 20.375rem;
+    background: #54E6AF;
+    box-shadow: 0px 1.563rem 1.25rem -1.25rem rgba(84, 230, 175, 0.497913);
+    border-radius: 1.75rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+    &:hover {
+      background: #B3FFE2;
+      transition: .4s;
+    }
+    // tablet
+    @media (min-width: 768px) {
+      position: absolute;
+      width: 10.125rem;
+      top: .313rem;
+      left: 16.25rem;
+    }
+  }
+}

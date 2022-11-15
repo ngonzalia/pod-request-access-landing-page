@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121725;
+  height: 41.6875rem - 3.875rem;
+  scroll-behavior: smooth;
+  // tablet
+  @media (min-width: 768px) {
+    height: 64rem - 3.125rem;
+  }
+  // desktop
+  @media (min-width: 1200px) {
+    height: 48rem;
+  }
+  // desktop xl
+  @media (min-width: 1440px) {
+    height: 56.25rem - 6.375rem;
+  }
+}

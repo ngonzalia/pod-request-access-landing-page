@@ -1,0 +1,21 @@
+.dots {
+  // don show on mobile version
+
+  // tablet
+  @media (min-width: 768px) {
+    background-image: url('../assets/desktop/bg-pattern-dots.svg');
+    height: 6.5rem;
+    width: 14.5rem;
+    position: absolute;
+    left: 1.875rem;
+    top: 57.5rem;
+  }
+  // desktop
+  @media (min-width: 1200px) {
+    height: 6.5rem;
+    width: 14.5rem;
+    left: unset;
+    right: 0;
+    top: 44.875rem;
+  }
+}

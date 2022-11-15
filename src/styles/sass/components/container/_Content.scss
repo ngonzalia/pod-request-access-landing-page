@@ -1,0 +1,106 @@
+.main {
+  width: 20.4375rem;
+  margin: 3.5625rem auto 5.875rem auto;
+  // tablet
+  @media (min-width: 768px) {
+    margin: 0;
+    height: 31.8125rem;
+    width: 39.6875rem;
+    position: absolute;
+    left: 2.4375rem;
+    top: 16.125rem;
+    padding-top: 5.8125rem;
+    background: #121725;
+  }
+  // desktop
+  @media (min-width: 1200px) {
+    height: 31.8125rem;
+    width: 45.1875rem;
+    left: 10.3125rem;
+    top: 16.3125rem;
+    padding: 5.5rem 3.625rem 0 0;
+  }
+
+  &-text {
+    margin-top: 1rem;
+    // tablet
+    @media (min-width: 768px) {
+      margin-top: 1.9375rem;
+      width: 27.8125rem;
+    }
+    // desktop
+    @media (min-width: 1200px) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  // form and brands
+  &-bottom {
+    margin-top: 2.0625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    // tablet
+    @media (min-width: 768px) {
+      margin-top: 2.5rem;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 4rem;
+    }
+  }
+
+  &-brands {
+    width: 19.6875rem;
+    display: flex;
+    align-items: center;
+    // tablet
+    @media (min-width: 768px) {
+      width: 33.5rem;
+    }
+
+    &_spotify {
+      height: 1.0625rem;
+      width: 3.5rem;
+      // tablet
+      @media (min-width: 768px) {
+        height: 1.8125rem;
+        width: 6rem;
+      }
+    }
+    &_apple {
+      height: 1.0625rem;
+      width: 2.8125rem;
+      margin-left: 1.4375rem;
+      // tablet
+      @media (min-width: 768px) {
+        height: 1.8125rem;
+        width: 4.875rem;
+        margin-left: 2.5rem;
+      }
+    }
+    &_google {
+      height: .6875rem;
+      width: 4.5625rem;
+      margin-left: 1.5625rem;
+      // tablet
+      @media (min-width: 768px) {
+        height: 1.125rem;
+        width: 7.8125rem;
+        margin-left: 2.5625rem;
+      }
+    }
+    &_pocket {
+      height: .9375rem;
+      width: 4.8125rem;
+      margin-left: 1rem;
+      // tablet
+      @media (min-width: 768px) {
+        height: 1.625rem;
+        width: 8.0625rem;
+        margin-left: 1.6875rem;
+      }
+    }
+  }
+}

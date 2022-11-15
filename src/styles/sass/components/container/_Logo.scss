@@ -1,0 +1,18 @@
+.logo-container {
+  height: 56px;
+  width: 135px;
+  margin: 62px auto 0 auto;
+  // tablet
+  @media (min-width: 768px) {
+    margin: 50px 0 0 39px;
+  }
+  // desktop
+  @media (min-width: 1200px) {
+    margin: 102px 0 0 165px;
+  }
+
+  .logo {
+    height: 56px;
+    width: 135px;
+  }
+}
